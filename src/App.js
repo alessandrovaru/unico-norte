@@ -1,20 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+//import useState from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+const [titles, setTitles] = useState([]);
+
+useEffect(() => {
+  let cleanup = false;
+  fetch('http://localhost:3000/')
+          .then(res => res.json())
+          .then(data => setTitles(data))
+  return () => {
+    cleanup = true;
+  };
+}, []);
+
   return (
     <div className="App">
       <header>
-        <h1>Hello World</h1>
+        <h1>Lenguajio</h1>
       </header>
-      <button onClick={() => {
-        fetch('http://localhost:3000/')
-          .then(res => res.json())
-          .then(data => console.log(data))
-      }
-      }>
-        Click Me
-      </button>
+      {titles.map(title => (
+        <div className='img_container'>
+          <img src={title} alt={title} />
+        </div>
+      ))}
     </div>
   );
 }
