@@ -1,6 +1,6 @@
 .main-carrousel{
   .container{
-    height: 60vh;
+    height: 90vh;
   }
 }
 .main-div{
@@ -17,6 +17,13 @@
   justify-content: center;
   cursor: pointer;
   div{
+    font-size: 120px;
+    -webkit-text-stroke: 4px white;
+    color: transparent;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+  }
+  div:hover{
     color: white;
   }
 }
