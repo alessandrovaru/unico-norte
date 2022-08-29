@@ -1,0 +1,14 @@
+.Footer{
+  background-color: #0c1116;
+  color: white;
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    height: 20vh;
+    z-index: 3;
+  }
+}
