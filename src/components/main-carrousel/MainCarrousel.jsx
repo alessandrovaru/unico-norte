@@ -1,16 +1,24 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import './styles.scss'
 
 const MainCarrousel = () => {
   return (
     <div className='main-carrousel'>
       <Container>
-        <div className="main-div">
-          <div>
-            Main Div
-          </div>
-        </div>
+        <Row>
+          <Col className="carrousel-title">
+            <h1>Daniela Barranco</h1>
+            <h2>Odio</h2>
+          </Col>
+          <Col>
+            <div className="main-gif">
+              <div> 
+                Main Div
+              </div>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </div>
   )
