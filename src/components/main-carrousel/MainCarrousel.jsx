@@ -24,14 +24,14 @@ const MainCarrousel = () => {
         <div className='main-carrousel'>
           <Container>
             <Row>
-              <Col className="carrousel-title">
+              <Col md={4} lg={4} xl={4} className="carrousel-title">
                 <h1>Daniela Barranco</h1>
                 <h2>Odio</h2>
               </Col>
-              <Col>
+              <Col md={8} lg={8} xl={8} >
                 <div className="main-gif">
                   <div> 
-                    Main Div
+                    ODIO
                   </div>
                 </div>
               </Col>
