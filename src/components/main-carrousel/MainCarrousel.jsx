@@ -1,4 +1,4 @@
-import React from 'react'
+import { FaYoutube, FaSpotify } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -24,9 +24,29 @@ const MainCarrousel = () => {
         <div className='main-carrousel'>
           <Container>
             <Row>
+              <Col>
+                <div className="main-gif">
+                  <div> 
+                    ÚNICO NORTE
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='main-carrousel'>
+          <Container>
+            <Row>
               <Col md={4} lg={4} xl={4} className="carrousel-title">
-                <h1>Daniela Barranco</h1>
-                <h2>Odio</h2>
+                <h2>Daniela Barranco</h2>
+                <h3>Odio</h3>
+                
+                <div>
+                <FaYoutube/>
+                <FaSpotify/>
+                </div>
               </Col>
               <Col md={8} lg={8} xl={8} >
                 <div className="main-gif">
