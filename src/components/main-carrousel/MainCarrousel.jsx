@@ -2,6 +2,9 @@ import { FaYoutube, FaSpotify } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import Tilt from 'react-vanilla-tilt'
+
+
 // Import Swiper styles
 import 'swiper/css';
 import './styles.scss'
@@ -20,7 +23,9 @@ const MainCarrousel = () => {
       }}
       modules={[Mousewheel, Pagination]}
       className="mySwiper">
+      
       <SwiperSlide>
+        <Tilt options={{ scale: 2, max: 25 }}>
         <div className='main-carrousel'>
           <Container>
             <Row>
@@ -34,7 +39,9 @@ const MainCarrousel = () => {
             </Row>
           </Container>
         </div>
+      </Tilt>
       </SwiperSlide>
+      
       <SwiperSlide>
         <div className='main-carrousel'>
           <Container>
